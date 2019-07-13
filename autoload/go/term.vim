@@ -51,7 +51,7 @@ function! go#term#newmode(bang, cmd, errorformat, mode) abort
   let l:state.id = termopen(a:cmd, l:job)
   let l:state.termwinid = win_getid(winnr())
 
-  execute l:cd . fnameescape(l:dir)
+  " execute l:cd . fnameescape(l:dir)
 
   " resize new term if needed.
   let l:height = go#config#TermHeight()
